@@ -1,9 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import $ from 'jquery'
-import {
-      PopupboxManager,
-      PopupboxContainer
-    } from 'react-popupbox';
 
 import HorizontalSwiper from './HorizontalSwiper'
 import ImageGallery from './ImageGallery'
@@ -15,8 +11,9 @@ import {fashion_swiper,
 
 const HomeBody = () => {
 
-const [path, setPath] = useState([])
-const [isHorizontalSliderOpen, setIsHorizontalSliderOpen] = useState(false)
+  const [path, setPath] = useState([])
+  const [isHorizontalSliderOpen, setIsHorizontalSliderOpen] = useState(false)
+  
   useEffect(() => {
       var jQueryBridget = require('jquery-bridget');
       var Isotope = require('isotope-layout');
@@ -92,7 +89,7 @@ return(
   </div>
 
   </div>
-)
+  )
 }
 
 

@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useCallback} from 'react';
 import Swiper from 'react-id-swiper';
 import { Dropbox } from 'dropbox'
 import fetch from 'isomorphic-unfetch'
@@ -11,28 +11,24 @@ const dbx = new Dropbox({
   fetch
 })
 
+
 const HorizontalSwiper = ({path, closeSlide}) => {
 
   const [images, setImages] = useState([])
   const [gallerySwiper, getGallerySwiper] = useState(null);
   const [thumbnailSwiper, getThumbnailSwiper] = useState(null);
-  const [singleImage, setSingleImage] = useState([])
+  const [listOfImages, setListOfImages] = useState([])
 
-  console.log(singleImage)
-  
-  const getSingleImage = async ({path_display}) => {
+  console.log({listOfImages})
 
-    try{
-      const fileUrl = await dbx.filesDownload({ "path": path_display })
+  const getSingleImages = async (images) => {
+    try {
 
-      setSingleImage([
-        ...images.filter(item => item.path_display !== path_display),
-        {
-          src : URL.createObjectURL(fileUrl.fileBlob)
-        }
-      ])
-
-
+      const myProm = await Promise.all(images.map(async item => {
+        const x = await dbx.filesDownload({ "path": item.path_display })
+        return x
+      }))
+      setListOfImages(myProm)
      }
     catch(error) {
       console.log(error)
@@ -52,7 +48,6 @@ const HorizontalSwiper = ({path, closeSlide}) => {
   }
 
     const gallerySwiperParams = {
-      getSwiper: getGallerySwiper,
       spaceBetween: 0,
       loop: true,
       navigation: {
@@ -65,7 +60,6 @@ const HorizontalSwiper = ({path, closeSlide}) => {
       },
     };
     const thumbnailSwiperParams = {
-      getSwiper: thumbnailSwiper,
       spaceBetween: 10,
       loop: true,
       slidesPerView: 7,
@@ -84,14 +78,10 @@ const HorizontalSwiper = ({path, closeSlide}) => {
 
     useEffect(() => {
       if (!images) return
-      images.forEach(({path_display}) =>
-        getSingleImage({path_display})
-      )
-
+      getSingleImages(images)
     }, [images]);
 
     useEffect(() => {
-
       if (
         gallerySwiper !== null &&
         gallerySwiper.controller &&
@@ -103,27 +93,33 @@ const HorizontalSwiper = ({path, closeSlide}) => {
       }
     }, [gallerySwiper, thumbnailSwiper]);
 
-  const handleOnClickClose = () => {
 
-  }
   return (
 
     <div className="lightbox">
         <CloseButton closeSlide={closeSlide}/>
-        <Swiper {...gallerySwiperParams} >
+        <Swiper {...gallerySwiperParams} shouldSwiperUpdate={true}>
           {
-            singleImage && singleImage.map(
-              image => <HeroSlide customClass={'main-swiper'} src={image.src}/>
+            listOfImages && listOfImages.map(
+              image => <HeroSlide
+                key={image.id}
+                customClass={'main-swiper'}
+                src={URL.createObjectURL(image.fileBlob)}
+              />
             )
           }
 
 
         </Swiper>
         <div id="thumbnail">
-          <Swiper {...thumbnailSwiperParams} className="thumbnail-swiper">
+          <Swiper {...thumbnailSwiperParams} className="thumbnail-swiper" shouldSwiperUpdate={true}>
             {
-              singleImage && singleImage.map(
-                image => <HeroSlide customClass={'main-swiper'} src={image.src}/>
+              listOfImages && listOfImages.map(
+                image => <HeroSlide
+                  key={image.id}
+                  customClass={'main-swiper'}
+                  src={URL.createObjectURL(image.fileBlob)}
+                />
               )
             }
           </Swiper>

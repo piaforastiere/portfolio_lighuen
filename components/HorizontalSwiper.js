@@ -19,7 +19,6 @@ const HorizontalSwiper = ({path, closeSlide}) => {
   const [singleImage, setSingleImage] = useState([])
 
   console.log(singleImage)
-  
   const getSingleImage = async ({path_display}) => {
 
     try{
@@ -27,9 +26,8 @@ const HorizontalSwiper = ({path, closeSlide}) => {
 
       setSingleImage([
         ...images.filter(item => item.path_display !== path_display),
-        {
-          src : URL.createObjectURL(fileUrl.fileBlob)
-        }
+
+        URL.createObjectURL(fileUrl.fileBlob)
       ])
 
 

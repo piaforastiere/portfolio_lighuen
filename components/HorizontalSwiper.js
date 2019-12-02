@@ -1,36 +1,33 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useCallback} from 'react';
 import Swiper from 'react-id-swiper';
 import { Dropbox } from 'dropbox'
 import fetch from 'isomorphic-unfetch'
 
-import { CloseButton } from './index'
-import HeroSlide from './HeroSlide'
+import { CloseButton, HeroSlide, Spinner } from './'
 
 const dbx = new Dropbox({
   accessToken: 'Ht1Z392ffvEAAAAAAAB-bKNJI2qyCRkfs6YJ4b7mJkEX2Z9pa6PafzxGmZ31hEpJ',
   fetch
 })
 
+
 const HorizontalSwiper = ({path, closeSlide}) => {
 
   const [images, setImages] = useState([])
   const [gallerySwiper, getGallerySwiper] = useState(null);
   const [thumbnailSwiper, getThumbnailSwiper] = useState(null);
-  const [singleImage, setSingleImage] = useState([])
+  const [listOfImages, setListOfImages] = useState([])
 
-  console.log(singleImage)
-  const getSingleImage = async ({path_display}) => {
+  console.log({listOfImages})
 
-    try{
-      const fileUrl = await dbx.filesDownload({ "path": path_display })
+  const getSingleImages = async (images) => {
+    try {
 
-      setSingleImage([
-        ...images.filter(item => item.path_display !== path_display),
-
-        URL.createObjectURL(fileUrl.fileBlob)
-      ])
-
-
+      const myProm = await Promise.all(images.map(async item => {
+        const x = await dbx.filesDownload({ "path": item.path_display })
+        return x
+      }))
+      setListOfImages(myProm)
      }
     catch(error) {
       console.log(error)
@@ -51,28 +48,21 @@ const HorizontalSwiper = ({path, closeSlide}) => {
 
     const gallerySwiperParams = {
       getSwiper: getGallerySwiper,
-      spaceBetween: 0,
-      loop: true,
+      spaceBetween: 10,
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false
-      },
+      loopedSlides: true,
     };
     const thumbnailSwiperParams = {
       getSwiper: thumbnailSwiper,
-      spaceBetween: 10,
-      loop: true,
-      slidesPerView: 7,
+      spaceBetween: 0,
+      slidesPerView: 5,
       touchRatio: 0.2,
+      centeredSlides: true,
       slideToClickedSlide: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false
-      },
+      loopedSlides: true,
     };
 
     useEffect(() => {
@@ -82,14 +72,10 @@ const HorizontalSwiper = ({path, closeSlide}) => {
 
     useEffect(() => {
       if (!images) return
-      images.forEach(({path_display}) =>
-        getSingleImage({path_display})
-      )
-
+      getSingleImages(images)
     }, [images]);
 
     useEffect(() => {
-
       if (
         gallerySwiper !== null &&
         gallerySwiper.controller &&
@@ -101,32 +87,37 @@ const HorizontalSwiper = ({path, closeSlide}) => {
       }
     }, [gallerySwiper, thumbnailSwiper]);
 
-  const handleOnClickClose = () => {
-
-  }
   return (
 
     <div className="lightbox">
+      { listOfImages.length === 0 && <Spinner />}
         <CloseButton closeSlide={closeSlide}/>
-        <Swiper {...gallerySwiperParams} >
+        <Swiper {...gallerySwiperParams} shouldSwiperUpdate={true}>
           {
-            singleImage && singleImage.map(
-              image => <HeroSlide customClass={'main-swiper'} src={image.src}/>
+            listOfImages && listOfImages.map(
+              image => <HeroSlide
+                key={image.id}
+                customClass={'main-swiper'}
+                src={URL.createObjectURL(image.fileBlob)}
+              />
             )
           }
-
-
         </Swiper>
         <div id="thumbnail">
-          <Swiper {...thumbnailSwiperParams} className="thumbnail-swiper">
+          <Swiper {...thumbnailSwiperParams} shouldSwiperUpdate={true}>
             {
-              singleImage && singleImage.map(
-                image => <HeroSlide customClass={'main-swiper'} src={image.src}/>
+              listOfImages && listOfImages.map(
+                image => <HeroSlide
+                  key={image.id}
+                  customClass={'thumbnail-swiper'}
+                  src={URL.createObjectURL(image.fileBlob)}
+                />
               )
             }
           </Swiper>
         </div>
       </div>
+
 
   )
 

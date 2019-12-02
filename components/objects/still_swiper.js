@@ -4,6 +4,7 @@ export default  [
     mainImg: "/img/still/Still_Photography-Foto1.jpg",
     description: 'Ahí, Dentro',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox still photography/still photography -  lightbox  fila 1"
   },
   {
@@ -11,6 +12,7 @@ export default  [
     mainImg: "/img/still/Still_Photography-Foto2.jpg",
     description: 'Ahí, Dentro',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox still photography/still photography -  lightbox  fila 1"
   },
   {
@@ -18,6 +20,7 @@ export default  [
     mainImg: "/img/still/Still_Photography-Foto3.jpg",
     description: 'Ahí, Dentro',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox still photography/still photography -  lightbox  fila 1"
   },
   {
@@ -25,6 +28,7 @@ export default  [
     mainImg: "/img/still/Still_Photography-Foto4.jpg",
     description: 'Ahí, Dentro',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox still photography/still photography -  lightbox  fila 1"
   },
   {
@@ -32,6 +36,7 @@ export default  [
     mainImg: "/img/still/Still_Photography-Foto5.jpg",
     description: 'VOTA JUAN - TNT',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox still photography/still photography -  lightbox  fila 2"
   },
   {
@@ -39,6 +44,7 @@ export default  [
     mainImg: "/img/still/Still_Photography-Foto6.jpg",
     description: 'VOTA JUAN - TNT',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox still photography/still photography -  lightbox  fila 2"
   },
   {
@@ -46,6 +52,7 @@ export default  [
     mainImg: "/img/still/Still_Photography-Foto7.jpg",
     description: 'VOTA JUAN - TNT',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox still photography/still photography -  lightbox  fila 2"
   },
   {
@@ -53,6 +60,7 @@ export default  [
     mainImg: "/img/still/Still_Photography-Foto8.jpg",
     description: 'VOTA JUAN - TNT',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox still photography/still photography -  lightbox  fila 3"
   },
   {
@@ -60,6 +68,7 @@ export default  [
     mainImg: "/img/still/Still_Photography-Foto9.jpg",
     description: 'VOTA JUAN - TNT',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox still photography/still photography -  lightbox  fila 3"
   },
   {
@@ -67,6 +76,7 @@ export default  [
     mainImg: "/img/still/Still_Photography-Foto10.jpg",
     description: 'VOTA JUAN - TNT',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox still photography/still photography -  lightbox  fila 3"
   },
   {
@@ -74,6 +84,7 @@ export default  [
     mainImg: "/img/still/Still_Photography-Foto11.jpg",
     description: 'VOTA JUAN - TNT',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox still photography/still photography -  lightbox  fila 4"
   },
   {
@@ -81,6 +92,7 @@ export default  [
     mainImg: "/img/still/Still_Photography-Foto12.jpg",
     description: 'VOTA JUAN - TNT',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox still photography/still photography -  lightbox  fila 4"
   },
   {
@@ -88,6 +100,7 @@ export default  [
     mainImg: "/img/still/Still_Photography-Foto14.jpg",
     description: 'VOTA JUAN - TNT',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox still photography/still photography -  lightbox  fila 4"
   },
   {
@@ -95,6 +108,7 @@ export default  [
     mainImg: "/img/still/Still_Photography-Foto15.jpg",
     description: 'VOTA JUAN - TNT',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox still photography/still photography -  lightbox  fila 4"
   },
   {
@@ -102,6 +116,7 @@ export default  [
     mainImg: "/img/still/Still_Photography-Foto17.jpg",
     description: 'VOTA JUAN - TNT',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox still photography/still photography -  lightbox  fila 5"
   },
   {
@@ -109,6 +124,7 @@ export default  [
     mainImg: "/img/still/Still_Photography-Foto16.jpg",
     description: 'VOTA JUAN - TNT',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox still photography/still photography -  lightbox  fila 5"
   },
   {
@@ -116,6 +132,7 @@ export default  [
     mainImg: "/img/still/Still_Photography-Foto18.jpg",
     description: 'VOTA JUAN - TNT',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox still photography/still photography -  lightbox  fila 5"
   },
   {
@@ -123,6 +140,7 @@ export default  [
     mainImg: "/img/still/Still_Photography-Foto20.jpg",
     description: 'VOTA JUAN - TNT',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox still photography/still photography -  lightbox  fila 6"
   },
   {
@@ -130,6 +148,7 @@ export default  [
     mainImg: "/img/still/Still_Photography-Foto19.jpg",
     description: 'VOTA JUAN - TNT',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox still photography/still photography -  lightbox  fila 6"
   },
   {
@@ -137,6 +156,7 @@ export default  [
     mainImg: "/img/still/Still_Photography-Foto21.jpg",
     description: 'VOTA JUAN - TNT',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox still photography/still photography -  lightbox  fila 6"
   },
   {
@@ -144,6 +164,7 @@ export default  [
     mainImg: "/img/still/Still_Photography-Foto23.jpg",
     description: 'VOTA JUAN - TNT',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox still photography/still photography -  lightbox  fila 7"
   },
   {
@@ -151,6 +172,7 @@ export default  [
     mainImg: "/img/still/Still_Photography-Foto22.jpg",
     description: 'VOTA JUAN - TNT',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox still photography/still photography -  lightbox  fila 7"
   },
   {
@@ -158,6 +180,7 @@ export default  [
     mainImg: "/img/still/Still_Photography-Foto24.jpg",
     description: 'VOTA JUAN - TNT',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox still photography/still photography -  lightbox  fila 7"
   },
   {
@@ -214,6 +237,7 @@ export default  [
     mainImg: "/img/still/Still_Photography-Foto32.jpg",
     description: 'ROCK ICON - ARISTOCRAZY',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox still photography/still photography -  lightbox  fila 10"
   },
 
@@ -223,6 +247,7 @@ export default  [
     mainImg: "/img/still/Still_Photography-Foto31.jpg",
     description: 'ROCK ICON - ARISTOCRAZY',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox still photography/still photography -  lightbox  fila 10"
   },
 
@@ -232,6 +257,7 @@ export default  [
     mainImg: "/img/still/Still_Photography-Foto33.jpg",
     description: 'ROCK ICON - ARISTOCRAZY',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox still photography/still photography -  lightbox  fila 10"
   },
 

@@ -4,6 +4,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto1.jpg",
     description:'SATALAYA IBIZA',
     model: 'MONIQUE SODRE',
+    position: 'vertical',
     path:'/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 1'
   },
 
@@ -12,6 +13,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto2.jpg",
     description:'SATALAYA IBIZA',
     model: 'MONIQUE SODRE',
+    position: 'vertical',
     path:'/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 1'
   },
 
@@ -20,6 +22,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto3.jpg",
     description:'SATALAYA IBIZA',
     model: 'MONIQUE SODRE',
+    position: 'vertical',
     path:'/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 1'
   },
 
@@ -29,6 +32,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto4.jpg",
     description: 'LIO BY VERSACE',
     model: 'NIA CORREIA',
+    position: 'vertical',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 2"
   },
 
@@ -37,6 +41,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto5.jpg",
     description: 'LIO BY VERSACE',
     model: 'NIA CORREIA',
+    position: 'vertical',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 2"
   },
 
@@ -45,6 +50,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto6.jpg",
     description: 'LIO BY VERSACE',
     model: 'NIA CORREIA',
+    position: 'vertical',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 2"
   },
 
@@ -53,6 +59,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto7.jpg",
     description: 'WATXANDCO WATCHES',
     model: '',
+    position: 'vertical',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 3"
   },
 
@@ -61,6 +68,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto8.jpg",
     description: 'WATXANDCO WATCHES',
     model: '',
+    position: 'vertical',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 3"
   },
 
@@ -69,6 +77,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto9.jpg",
     description: 'WATXANDCO WATCHES',
     model: '',
+    position: 'vertical',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 3"
   },
 
@@ -77,6 +86,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto10.jpg",
     description: 'PURE PACHA',
     model: '',
+    position: 'vertical',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 4"
   },
 
@@ -85,6 +95,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto11.jpg",
     description: 'PURE PACHA',
     model: '',
+    position: 'vertical',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 4"
   },
 
@@ -93,12 +104,12 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto12.jpg",
     description: 'PURE PACHA',
     model: '',
+    position: 'vertical',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 4"
   },
 
   {
-    classes:  "element fashion center ",
-    // styles: '`style={{marginBottom: 48+'px'},},`',
+    classes:  "element fashion center mb",
     mainImg:"/img/fashion/Fashion&Portrait-Foto13.jpg",
     description: 'PURE PACHA',
     model: '',
@@ -158,6 +169,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto21.jpg",
     description: 'Uñas chung Lee',
     model: '',
+    position: 'vertical',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 7"
   },
 
@@ -166,6 +178,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto20.jpg",
     description: 'Uñas chung Lee',
     model: '',
+    position: 'vertical',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 7"
   },
 
@@ -174,6 +187,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto22.jpg",
     description: 'Uñas chung Lee',
     model: '',
+    position: 'vertical',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 7"
   },
 
@@ -182,6 +196,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto24.jpg",
     description: 'Medias Puri',
     model: '',
+    position: 'vertical',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 8"
   },
 
@@ -190,6 +205,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto23.jpg",
     description: 'Medias Puri',
     model: '',
+    position: 'vertical',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 8"
   },
 
@@ -198,6 +214,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto25.jpg",
     description: 'Medias Puri',
     model: '',
+    position: 'vertical',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 8"
   },
 
@@ -227,13 +244,6 @@ export default  [
 
   },
   {
-    classes: "element fashion center ",
-    mainImg:"/img/fashion/Fashion&Portrait-Foto30.jpg",
-    description: 'NUMERO 00 - Soleetka',
-    model: '',
-    path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 10"
-  },
-  {
     classes: "element fashion right ",
     mainImg:"/img/fashion/Fashion&Portrait-Foto31.jpg",
     description: 'NUMERO 00 - Soleetka',
@@ -241,43 +251,59 @@ export default  [
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 10"
   },
   {
+    classes: "element fashion center ",
+    mainImg:"/img/fashion/Fashion&Portrait-Foto30.jpg",
+    description: 'NUMERO 00 - Soleetka',
+    model: '',
+    position: 'vertical',
+    path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 10"
+  },
+
+  {
     classes: "element fashion left ",
     mainImg:"/img/fashion/Fashion&Portrait-Foto29.jpg",
     description: 'NUMERO 00 - Soleetka',
     model: '',
+    position: 'vertical',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 10"
-  },
-  {
-    classes: "element fashion center ",
-    mainImg:"/img/fashion/Fashion&Portrait-Foto33.jpg",
-    description: '',
-    model: '',
-    path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 11"
   },
   {
     classes: "element fashion right ",
     mainImg:"/img/fashion/Fashion&Portrait-Foto34.jpg",
     description: '',
     model: '',
+    position: 'vertical',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 11"
   },
+  {
+    classes: "element fashion center ",
+    mainImg:"/img/fashion/Fashion&Portrait-Foto33.jpg",
+    description: '',
+    model: '',
+    position: 'vertical',
+    path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 11"
+  },
+
   {
     classes: "element fashion left ",
     mainImg:"/img/fashion/Fashion&Portrait-Foto32.jpg",
     description: '',
     model: '',
+    position: 'vertical',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 11"
-  },
-  {
-    classes: "element fashion center ",
-    mainImg:"/img/fashion/Fashion&Portrait-Foto36.jpg",
-    description: 'MARIA HINOJOSA',
-    model: '',
-    path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 12"
   },
   {
     classes: "element fashion right ",
     mainImg:"/img/fashion/Fashion&Portrait-Foto37.jpg",
+    description: 'MARIA HINOJOSA',
+    model: '',
+    position: 'vertical',
+    path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 12"
+  },
+
+  {
+    classes: "element fashion center ",
+    mainImg:"/img/fashion/Fashion&Portrait-Foto36.jpg",
     description: 'MARIA HINOJOSA',
     model: '',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 12"
@@ -293,33 +319,37 @@ export default  [
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 12"
   },
   {
-    classes: "element fashion center ",
-    mainImg:"/img/fashion/Fashion&Portrait-Foto38.jpg",
-    description: 'SAM GOMEZ',
-    model: '',
-    path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 13"
-  },
-  {
     classes: "element fashion right ",
     mainImg:"/img/fashion/Fashion&Portrait-Foto40.jpg",
     description: 'SAM GOMEZ',
     model: '',
+    position: 'vertical',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 13"
   },
+  {
+    classes: "element fashion center ",
+    mainImg:"/img/fashion/Fashion&Portrait-Foto38.jpg",
+    description: 'SAM GOMEZ',
+    model: '',
+    position: 'vertical',
+    path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 13"
+  },
+
   {
     classes: "element fashion left ",
     mainImg:"/img/fashion/Fashion&Portrait-Foto39.jpg",
     description: 'SAM GOMEZ',
     model: '',
+    position: 'vertical',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 13"
   },
 
   {
-    classes: "element fashion center ",
-    // styles: '`style={{marginBottom: 45+'px'},},`',
+    classes: "element fashion center mb",
     mainImg:"/img/fashion/Fashion&Portrait-Foto41.jpg",
     description: 'SAM GOMEZ',
     model: '',
+    position: 'vertical',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 13"
   },
 
@@ -328,6 +358,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto44.jpg",
     description: 'Veronica Sanchez',
     model: '',
+    position: 'vertical',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 14"
   },
 
@@ -336,6 +367,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto43.jpg",
     description: 'Veronica Sanchez',
     model: '',
+    position: 'vertical',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 14"
   },
 
@@ -344,6 +376,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto42.jpg",
     description: 'Veronica Sanchez',
     model: '',
+    position: 'vertical',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 14"
   },
 
@@ -376,6 +409,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto49.jpg",
     description: 'Israel Mata',
     model: '',
+    position: 'vertical',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 16"
   },
 
@@ -384,6 +418,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto50.jpg",
     description: 'Israel Mata',
     model: '',
+    position: 'vertical',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 16"
   },
 
@@ -392,6 +427,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto48.jpg",
     description: 'Israel Mata',
     model: '',
+    position: 'vertical',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 16"
   },
 
@@ -409,6 +445,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto52.jpg",
     description: 'ARISTOCRAZY - ROCK ICON',
     model: '',
+    position: 'vertical',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 17"
   },
 
@@ -417,6 +454,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto53.jpg",
     description: 'ARISTOCRAZY - ROCK ICON',
     model: '',
+    position: 'vertical',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 17"
   },
 
@@ -425,6 +463,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto54.jpg",
     description: 'ARISTOCRAZY - ROCK ICON',
     model: '',
+    position: 'vertical',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 17"
   },
 
@@ -434,6 +473,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto55.jpg",
     description: 'EMILIANO CARRAZZONE',
     model: '',
+    position: 'vertical',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 18"
   },
 
@@ -442,6 +482,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto56.jpg",
     description: 'EMILIANO CARRAZZONE',
     model: '',
+    position: 'vertical',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 18"
   },
 
@@ -450,6 +491,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto57.jpg",
     description: 'EMILIANO CARRAZZONE',
     model: '',
+    position: 'vertical',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 18"
   },
 
@@ -530,6 +572,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto69.jpg",
     description: 'Me by Melia Hotels',
     model: '',
+    position: 'vertical',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 22"
   },
 
@@ -538,5 +581,6 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto68.jpg",
     description: 'Me by Melia Hotels',
     model: '',
+    position: 'vertical',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 22"
   },]

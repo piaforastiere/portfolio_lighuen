@@ -11,7 +11,7 @@ const links = [
 })
 
 const Nav = () => (
-  <nav className="sticky-top navbar navbar-expand-lg navbar-light bg-light">
+  <nav className="sticky-top navbar navbar-expand-lg navbar-light">
       <a className="navbar-brand" href="lighuen.html">LIGHUEN <br/><span>DESANTO</span></a>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>

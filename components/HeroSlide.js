@@ -9,7 +9,7 @@ const HeroSlide = ({src, id, customClass}) => {
 
 
       <div className={`swiper-slide ${customClass}`}>
-        <img src={src} alt="" key={id}/>
+        <img src={src} alt="" />
       </div>
 
   )

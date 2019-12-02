@@ -10,22 +10,6 @@ import HeroSlide from './HeroSlide'
 
     const [files, setFiles] = useState (null)
 
-
-    // const getFiles = () => {
-    //   const dbx = new Dropbox({
-    //     accessToken: 'Ht1Z392ffvEAAAAAAAB-bKNJI2qyCRkfs6YJ4b7mJkEX2Z9pa6PafzxGmZ31hEpJ',
-    //     fetch
-    //   })
-    //
-    //   dbx.filesListFolder({
-    //     "path": "/web_portfolio_api/estructura de fotos para  web lighuen desanto/SLIDER HOME",
-    //     "recursive": false
-    //   }).then(files =>
-    //        setFiles(files.entries)
-    //      )
-    //
-    // }
-    //
     const params = {
       slidesPerView: 1,
       spaceBetween: 0,
@@ -35,11 +19,6 @@ import HeroSlide from './HeroSlide'
         disableOnInteraction: false
       },
     }
-    //
-    //
-    // useEffect(() => {
-    //   getFiles()
-    // }, [])
 
 
     return (

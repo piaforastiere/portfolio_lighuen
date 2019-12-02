@@ -70,6 +70,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto10.jpg",
     description: 'Muerte en el Nilo',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 4"
   },
   {
@@ -77,6 +78,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto11.jpg",
     description: 'Muerte en el Nilo',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 4"
   },
   {
@@ -84,6 +86,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto12.jpg",
     description: 'Muerte en el Nilo',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 4"
   },
 
@@ -92,6 +95,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto13.jpg",
     description: 'JUANA, LOS DEDAE',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 5"
   },
   {
@@ -99,6 +103,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto14.jpg",
     description: 'JUANA, LOS DEDAE',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 5"
   },
   {
@@ -106,6 +111,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto15.jpg",
     description: 'JUANA, LOS DEDAE',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 5"
   },
   {
@@ -113,6 +119,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto16.jpg",
     description: 'JUANA, LOS DEDAE',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 5"
   },
 
@@ -166,6 +173,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto24.jpg",
     description: 'The Opera Locos',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 8"
   },
   {
@@ -173,6 +181,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto23.jpg",
     description: 'The Opera Locos',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 8"
   },
   {
@@ -180,6 +189,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto25.jpg",
     description: 'The Opera Locos',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 8"
   },
   {
@@ -187,6 +197,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto26.jpg",
     description: 'The Opera Locos',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 8"
   },
 
@@ -240,6 +251,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto34.jpg",
     description: 'Ghost Musical',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 11"
   },
   {
@@ -247,6 +259,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto33.jpg",
     description: 'Ghost Musical',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 11"
   },
   {
@@ -254,6 +267,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto35.jpg",
     description: 'Ghost Musical',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 11"
   },
   {
@@ -261,6 +275,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto36.jpg",
     description: 'Ghost Musical',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 11"
   },
 
@@ -291,6 +306,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto41.jpg",
     description: 'Lio Ibiza',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 13"
   },
   {
@@ -298,6 +314,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto40.jpg",
     description: 'Lio Ibiza',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 13"
   },
   {
@@ -305,6 +322,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto42.jpg",
     description: 'Lio Ibiza',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 13"
   },
   {
@@ -312,6 +330,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto43.jpg",
     description: 'Lio Ibiza',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 13"
   },
 
@@ -320,6 +339,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto45.jpg",
     description: 'Tacones Manoli',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 14"
   },
   {
@@ -327,6 +347,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto44.jpg",
     description: 'Tacones Manoli',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 14"
   },
   {
@@ -334,6 +355,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto46.jpg",
     description: 'Tacones Manoli',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 14"
   },
   {
@@ -341,6 +363,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto47.jpg",
     description: 'Tacones Manoli',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 14"
   },
 
@@ -349,6 +372,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto49.jpg",
     description: 'EL CABARET DEL MAIPO',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 15"
   },
   {
@@ -356,6 +380,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto48.jpg",
     description: 'EL CABARET DEL MAIPO',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 15"
   },
   {
@@ -363,6 +388,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto50.jpg",
     description: 'EL CABARET DEL MAIPO',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 15"
   },
   {
@@ -370,6 +396,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto51.jpg",
     description: 'EL CABARET DEL MAIPO',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 15"
   },
 
@@ -378,6 +405,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto53.jpg",
     description: 'PACHA IBIZA',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 16"
   },
   {
@@ -385,6 +413,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto52.jpg",
     description: 'PACHA IBIZA',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 16"
   },
   {
@@ -392,6 +421,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto54.jpg",
     description: 'PACHA IBIZA',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 16"
   },
   {
@@ -399,6 +429,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto55.jpg",
     description: 'PACHA IBIZA',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 16"
   },
   {
@@ -406,6 +437,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto56.jpg",
     description: 'PACHA IBIZA',
     model: '',
+    position: 'vertical',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 16"
   },
 

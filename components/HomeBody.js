@@ -1,12 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import $ from 'jquery'
-import {
-      PopupboxManager,
-      PopupboxContainer
-    } from 'react-popupbox';
 
-import HorizontalSwiper from './HorizontalSwiper'
-import ImageGallery from './ImageGallery'
+
+import { HorizontalSwiper, VerticalSwiper, ImageGallery } from './index'
 
 import {fashion_swiper,
       still_swiper,
@@ -15,8 +11,10 @@ import {fashion_swiper,
 
 const HomeBody = () => {
 
-const [path, setPath] = useState([])
-const [isHorizontalSliderOpen, setIsHorizontalSliderOpen] = useState(false)
+  const [path, setPath] = useState([])
+  const [isHorizontalSliderOpen, setIsHorizontalSliderOpen] = useState(false)
+  const [isVerticalSliderOpen, setIsVerticalSliderOpen] = useState(false)
+
   useEffect(() => {
       var jQueryBridget = require('jquery-bridget');
       var Isotope = require('isotope-layout');
@@ -50,18 +48,16 @@ const [isHorizontalSliderOpen, setIsHorizontalSliderOpen] = useState(false)
       });
 
 
-
   }, [])
-
-
-  const handleClick = () => {
-
-  };
-
 
 return(
   <div>
-  {isHorizontalSliderOpen && <HorizontalSwiper {...isHorizontalSliderOpen} closeSlide={() => setIsHorizontalSliderOpen(false)} />}
+
+  {isHorizontalSliderOpen && <HorizontalSwiper {...isHorizontalSliderOpen} closeSlide={() => setIsHorizontalSliderOpen(false)}/>}
+
+  {isVerticalSliderOpen && <VerticalSwiper {...isHorizontalSliderOpen} closeSlide={() => setIsHorizontalSliderOpen(false)} />}
+
+
   <div className="container">
   <div className="navbarGallery">
     <div className="button-group filters-button-group gallery-nav">
@@ -75,16 +71,16 @@ return(
 
 
       {
-        home_swiper && home_swiper.map(item => <ImageGallery {...item} openSlider={setIsHorizontalSliderOpen} />)
+        home_swiper && home_swiper.map(item => <ImageGallery {...item} openSlider={setIsHorizontalSliderOpen} openVericalSlider={setIsVerticalSliderOpen}/>)
       }
       {
-        fashion_swiper && fashion_swiper.map(item => <ImageGallery {...item} openSlider={setIsHorizontalSliderOpen} />)
+        fashion_swiper && fashion_swiper.map(item => <ImageGallery {...item} openSlider={setIsHorizontalSliderOpen} openVericalSlider={setIsVerticalSliderOpen}/>)
       }
       {
-        still_swiper && still_swiper.map(item => <ImageGallery {...item} openSlider={setIsHorizontalSliderOpen} />)
+        still_swiper && still_swiper.map(item => <ImageGallery {...item} openSlider={setIsHorizontalSliderOpen} openVericalSlider={setIsVerticalSliderOpen}/>)
       }
       {
-        theatre_swiper && theatre_swiper.map(item => <ImageGallery {...item} openSlider={setIsHorizontalSliderOpen} />)
+        theatre_swiper && theatre_swiper.map(item => <ImageGallery {...item} openSlider={setIsHorizontalSliderOpen} openVericalSlider={setIsVerticalSliderOpen}/>)
       }
 
 
@@ -92,7 +88,7 @@ return(
   </div>
 
   </div>
-)
+  )
 }
 
 

@@ -5,7 +5,7 @@ export default  [
     description: 'NUMERO 00 - Soleetka',
     model: '',
     position: 'vertical',
-    path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox home/home - lightboxs columna 1 - foto 1"
+    path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox home/home - lightboxs columna 1/lightbox columna 1 - foto 1"
   },
   {
     classes: 'element HOME center',
@@ -43,7 +43,7 @@ export default  [
     mainImg: '/img/HOME/Home-Columna1-Foto2.jpg',
     description: 'ANNI ULM',
     model: '',
-    path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox home/home - lightboxs columna 1 - foto 2"
+    path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox home/home - lightboxs columna 1/lightbox columna 1 - foto 2"
   },
   {
     classes: 'element HOME right',
@@ -57,7 +57,7 @@ export default  [
     mainImg: '/img/HOME/Home-Columna1-Foto3.jpg',
     description: 'Santa Kyra x Antonio Velasco',
     model: '',
-    path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox home/home - lightboxs columna 1 - foto 3"
+    path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox home/home - lightboxs columna 1/lightbox columna 1 - foto 3"
   },
   {
     classes: 'element HOME right',
@@ -79,7 +79,7 @@ export default  [
     description: 'Uñas chung Lee',
     model: '',
     position: 'vertical',
-    path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox home/home - lightboxs columna 1 - foto 4"
+    path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox home/home - lightboxs columna 1/lightbox columna 1 - foto 4"
   },
   {
     classes: 'element HOME right',
@@ -115,7 +115,7 @@ export default  [
     mainImg: '/img/HOME/Home-Columna1-Foto5.jpg',
     description: 'INFLABLES IBIZA PHOTO SERIE',
     model: '',
-    path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox home/home - lightboxs columna 1 - foto 5"
+    path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox home/home - lightboxs columna 1/lightbox columna 1 - foto 5"
   },
   {
     classes: 'element HOME center',
@@ -130,7 +130,7 @@ export default  [
     mainImg: '/img/HOME/Home-Columna1-Foto6.jpg',
     description: 'MILK',
     model: '',
-    path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox home/home - lightboxs columna 1 - foto 6"
+    path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox home/home - lightboxs columna 1/lightbox columna 1 - foto 6"
   },
   {
     classes: 'element HOME right',
@@ -145,7 +145,7 @@ export default  [
     description: 'SATALAYA IBIZA',
     model: 'MONIQUE SODRE',
     position: 'vertical',
-    path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox home/home - lightboxs columna 1 - foto 7"
+    path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox home/home - lightboxs columna 1/lightbox columna 1 - foto 7"
   },
   {
     classes: 'element HOME right',
@@ -183,7 +183,7 @@ export default  [
     description: 'MARIA HINOJOSA',
     model: '',
     position: 'vertical',
-    path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox home/home - lightboxs columna 1 - foto 8"
+    path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox home/home - lightboxs columna 1/lightbox columna 1 - foto 8"
   },
   {
     classes: 'element HOME center',
@@ -213,7 +213,7 @@ export default  [
     mainImg: '/img/HOME/Home-Columna1-Foto9.jpg',
     description: 'Me by Melia Hotels',
     model: '',
-    path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox home/home - lightboxs columna 1 - foto 9"
+    path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox home/home - lightboxs columna 1/lightbox columna 1 - foto 9"
   },
   {
     classes: 'element HOME right',
@@ -229,7 +229,7 @@ export default  [
     description: 'Medias Puri',
     model: '',
     position: 'vertical',
-    path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox home/home - lightboxs columna 1 - foto 10"
+    path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox home/home - lightboxs columna 1/lightbox columna 1 - foto 10"
   },
   {
     classes: 'element HOME center',
@@ -261,7 +261,7 @@ export default  [
     description: 'WATXANDCO WATCHES',
     model: '',
     position: 'vertical',
-    path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox home/home - lightboxs columna 1 - foto 11"
+    path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox home/home - lightboxs columna 1/lightbox columna 1 - foto 11"
   },
   {
     classes: 'element HOME right',

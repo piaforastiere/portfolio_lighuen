@@ -47,6 +47,8 @@ const HomeBody = () => {
         });
       });
 
+    
+
 
   }, [])
 
@@ -60,7 +62,7 @@ return(
 
   <div className="container">
   <div className="navbarGallery">
-    <div className="button-group filters-button-group gallery-nav">
+    <div className="button-group filters-button-group gallery-nav" id="filters">
       <button className="button is-checked" data-filter=".fashion">fashion</button>
       <button className="button" data-filter=".still">still photography</button>
       <button className="button" data-filter=".theatre">theatre</button>

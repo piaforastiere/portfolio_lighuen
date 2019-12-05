@@ -11,7 +11,7 @@ import {
   HeroSwiper,
    Files,
    HomeBody,
-   HorizontalSwiper
+   Press
     } from '../components'
 
 const Home = () => (
@@ -28,6 +28,9 @@ const Home = () => (
     <Nav />
     <HeroSwiper />
     <HomeBody />
+    <script src="js/scrollmagic/minified/ScrollMagic.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
   </div>
 )
 

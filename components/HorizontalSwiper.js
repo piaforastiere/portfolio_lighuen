@@ -11,7 +11,7 @@ const dbx = new Dropbox({
 })
 
 
-const HorizontalSwiper = ({path, closeSlide}) => {
+const HorizontalSwiper = ({path, closeSlide, cursor}) => {
 
   const [images, setImages] = useState([])
   const [gallerySwiper, getGallerySwiper] = useState(null);
@@ -24,7 +24,7 @@ const HorizontalSwiper = ({path, closeSlide}) => {
     try {
 
       const myProm = await Promise.all(images.map(async item => {
-        const x = await dbx.filesDownload({ "path": item.path_display })
+        const x = await dbx.filesDownload({ "path": item.path_display})
         return x
       }))
       setListOfImages(myProm)
@@ -39,9 +39,17 @@ const HorizontalSwiper = ({path, closeSlide}) => {
 
     dbx.filesListFolder({
       "path": path,
-      "recursive": false
+      "recursive": false,
+      "limit": 6
     }).then(images =>
          setImages(images.entries)
+       ).then(
+         //altra chiamata con cursor () y has_more dentro di un loop
+         if (images.has_more === 'true'){
+           dbx.filesListFolderContinue({
+             "cursor": images.cursor,
+           })
+         }
        )
 
   }
@@ -56,11 +64,11 @@ const HorizontalSwiper = ({path, closeSlide}) => {
       loopedSlides: true,
     };
     const thumbnailSwiperParams = {
-      getSwiper: thumbnailSwiper,
-      spaceBetween: 0,
+      getSwiper: getThumbnailSwiper,
+      spaceBetween: 10,
+      centeredSlides: true,
       slidesPerView: 5,
       touchRatio: 0.2,
-      centeredSlides: true,
       slideToClickedSlide: true,
       loopedSlides: true,
     };
@@ -91,7 +99,7 @@ const HorizontalSwiper = ({path, closeSlide}) => {
 
     <div className="lightbox">
       { listOfImages.length === 0 && <Spinner />}
-        <CloseButton closeSlide={closeSlide}/>
+
         <Swiper {...gallerySwiperParams} shouldSwiperUpdate={true}>
           {
             listOfImages && listOfImages.map(
@@ -116,6 +124,7 @@ const HorizontalSwiper = ({path, closeSlide}) => {
             }
           </Swiper>
         </div>
+        <CloseButton closeSlide={closeSlide}/>
       </div>
 
 

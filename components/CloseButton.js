@@ -4,7 +4,9 @@ import {IoIosClose} from 'react-icons/io'
 const CloseButton = ({closeSlide}) => {
 
   return(
-    <IoIosClose onClick={() => closeSlide()}/>
+    <div className="close-button">
+      <IoIosClose onClick={() => closeSlide()}/>
+    </div>
   )
 }
 

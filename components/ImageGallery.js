@@ -2,7 +2,7 @@ import React, { Component, useState, useEffect} from 'react';
 import { Dropbox } from 'dropbox'
 import fetch from 'isomorphic-unfetch'
 
-const ImageGallery = ({classes, mainImg, description, model, openSlider, openVericalSlider, position = '', path}) => {
+const ImageGallery = ({classes, mainImg, description, model, openSlider, openVericalSlider, position = '', path, cursor}) => {
 
 const [image, setImage] = useState([])
 
@@ -12,7 +12,7 @@ const [image, setImage] = useState([])
 
 
     <div className={`${classes}`}
-         onClick={() => position == 'vertical' ?  openVericalSlider({path}) : openSlider({path})}
+         onClick={() => openSlider({path, cursor})}
          key={mainImg}>
       <img src={mainImg} alt="" />
       { description ?

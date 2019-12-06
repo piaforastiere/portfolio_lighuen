@@ -43,15 +43,7 @@ const HorizontalSwiper = ({path, closeSlide, cursor}) => {
       "limit": 6
     }).then(images =>
          setImages(images.entries)
-       ).then(
-         //altra chiamata con cursor () y has_more dentro di un loop
-         if (images.has_more === 'true'){
-           dbx.filesListFolderContinue({
-             "cursor": images.cursor,
-           })
-         }
        )
-
   }
 
     const gallerySwiperParams = {
@@ -62,6 +54,16 @@ const HorizontalSwiper = ({path, closeSlide, cursor}) => {
         prevEl: '.swiper-button-prev',
       },
       loopedSlides: true,
+      on: {
+        slideNext: function () {
+          console.log('xxx')
+          dbx.filesListFolderContinue({
+            "cursor": images.cursor,
+          }).then((e) => {
+            console.log(e)
+          })
+        },
+      }
     };
     const thumbnailSwiperParams = {
       getSwiper: getThumbnailSwiper,

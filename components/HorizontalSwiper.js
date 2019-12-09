@@ -17,6 +17,7 @@ const HorizontalSwiper = ({path, closeSlide, cursor}) => {
   const [gallerySwiper, getGallerySwiper] = useState(null);
   const [thumbnailSwiper, getThumbnailSwiper] = useState(null);
   const [listOfImages, setListOfImages] = useState([])
+  const [entireImageCall, setEntireImageCall] = useState(null)
 
   console.log({listOfImages})
 
@@ -35,15 +36,28 @@ const HorizontalSwiper = ({path, closeSlide, cursor}) => {
 
   }
 
-  const getFiles = () => {
+  const getFiles = async () => {
 
-    dbx.filesListFolder({
+    const newImages = await dbx.filesListFolder({
       "path": path,
       "recursive": false,
       "limit": 6
-    }).then(images =>
-         setImages(images.entries)
-       )
+    })
+    setImages([...newImages.entries])
+    setEntireImageCall(newImages)
+  
+  }
+
+  const getMoreFiles = async (cursor, setImages, images) => {
+    const newImages = await dbx.filesListFolderContinue({
+      cursor,
+    })
+    setImages([
+      ...images,
+      ...newImages.entries,
+    ])
+    setEntireImageCall(newImages)
+
   }
 
     const gallerySwiperParams = {
@@ -55,13 +69,8 @@ const HorizontalSwiper = ({path, closeSlide, cursor}) => {
       },
       loopedSlides: true,
       on: {
-        slideNext: function () {
-          console.log('xxx')
-          dbx.filesListFolderContinue({
-            "cursor": images.cursor,
-          }).then((e) => {
-            console.log(e)
-          })
+        init: function () {
+          
         },
       }
     };
@@ -84,6 +93,13 @@ const HorizontalSwiper = ({path, closeSlide, cursor}) => {
       if (!images) return
       getSingleImages(images)
     }, [images]);
+
+    useEffect(() => {
+      if (!entireImageCall) return
+      if(entireImageCall.has_more) {
+        getMoreFiles(entireImageCall.cursor, setImages, images)
+      }
+    }, [entireImageCall])
 
     useEffect(() => {
       if (

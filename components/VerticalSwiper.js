@@ -11,7 +11,7 @@ const dbx = new Dropbox({
 })
 
 
-const VerticalSwiper = ({path, closeSlide}) => {
+const HorizontalSwiper = ({path, closeSlide, cursor}) => {
 
   const [images, setImages] = useState([])
   const [gallerySwiper, getGallerySwiper] = useState(null);
@@ -24,7 +24,7 @@ const VerticalSwiper = ({path, closeSlide}) => {
     try {
 
       const myProm = await Promise.all(images.map(async item => {
-        const x = await dbx.filesDownload({ "path": item.path_display })
+        const x = await dbx.filesDownload({ "path": item.path_display})
         return x
       }))
       setListOfImages(myProm)
@@ -44,17 +44,26 @@ const VerticalSwiper = ({path, closeSlide}) => {
     }).then(images =>
          setImages(images.entries)
        )
-
   }
 
     const gallerySwiperParams = {
       getSwiper: getGallerySwiper,
-      spaceBetween: 10,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
+      spaceBetween: 0,
+      // navigation: {
+      //   nextEl: '.swiper-button-next',
+      //   prevEl: '.swiper-button-prev',
+      // },
       loopedSlides: true,
+      on: {
+        slideNext: function () {
+          console.log('xxx')
+          dbx.filesListFolderContinue({
+            "cursor": images.cursor,
+          }).then((e) => {
+            console.log(e)
+          })
+        },
+      }
     };
     const thumbnailSwiperParams = {
       getSwiper: getThumbnailSwiper,
@@ -64,6 +73,7 @@ const VerticalSwiper = ({path, closeSlide}) => {
       touchRatio: 0.2,
       slideToClickedSlide: true,
       loopedSlides: true,
+      direction: 'vertical',
     };
 
     useEffect(() => {
@@ -90,9 +100,10 @@ const VerticalSwiper = ({path, closeSlide}) => {
 
   return (
 
-    <div className="lightbox">
+    <div className="lightbox vertical">
       { listOfImages.length === 0 && <Spinner />}
-        <CloseButton closeSlide={closeSlide}/>
+
+
         <Swiper {...gallerySwiperParams} shouldSwiperUpdate={true}>
           {
             listOfImages && listOfImages.map(
@@ -117,6 +128,8 @@ const VerticalSwiper = ({path, closeSlide}) => {
             }
           </Swiper>
         </div>
+
+        <CloseButton closeSlide={closeSlide}/>
       </div>
 
 
@@ -125,4 +138,4 @@ const VerticalSwiper = ({path, closeSlide}) => {
 }
 
 
-export default VerticalSwiper
+export default HorizontalSwiper

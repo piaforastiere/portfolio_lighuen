@@ -1,10 +1,14 @@
 import React, {useEffect, useState} from 'react'
 import { FaRegComments } from 'react-icons/fa'
+import {IoIosClose} from 'react-icons/io'
 
 const Contact = ({closeContact}) => {
 
   return(
     <div className="contact-card">
+    <div className="close-button">
+      <IoIosClose onClick={() => closeContact()}/>
+    </div>
     <FaRegComments />
       <h2 className="contact-title">
         For more information you can:

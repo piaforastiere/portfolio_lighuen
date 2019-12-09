@@ -11,6 +11,10 @@ body * {
   padding: 0 100px;
   font-size: 15px;
   background-color: #fff;
+  position: fixed;
+}
+.nav-link{
+  cursor: pointer;
 }
 .bg-light{
   background-color: rgba(250,250,250, 0.8)!important;
@@ -161,6 +165,9 @@ button:focus{
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 768px){
+    display: none;
+  }
 }
 .element.left{
   padding-right: 20px;
@@ -175,6 +182,8 @@ button:focus{
   width: 100%;
 }
 .title-press{
+  font-size: 20px;
+  font-weight: 600;
   height: 16px;
   text-align: center;
   padding: 50px;
@@ -215,56 +224,148 @@ footer{
   color: #fff;
 }
 .lightbox{
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: rgba(0,0,0, 0.5);
-  height: 100vh;
-  width: 100vw;
-  z-index: 1030;
-
-  svg{
-    fill: white;
-    font-size: 50px;
-    float: right;
-    margin-right: 40px;
-    margin-bottom: -25px;
-    z-index: 100;
-  }
-  .swiper-container{
-      height: 75%;
-      .swiper-wrapper{
-        height: 100%;
-      }
-  }
-  .main-swiper{
-    display: flex;
-    img{
-      height: 100%;
-      margin: auto;
-      width: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 0.5);
+    height: 100vh;
+    width: 100vw;
+    z-index: 1030;
+    @media screen and (max-width: 768px){
+      background-color: rgba(0,0,0, 0.8);
     }
-
-}
-  #thumbnail{
-    height: 25%;
+    svg{
+      fill: white;
+      font-size: 50px;
+      float: right;
+      margin-right: 40px;
+      margin-bottom: -25px;
+      z-index: 100;
+    }
     .swiper-container{
-      height: 100%;
-    }
-    .thumbnail-swiper{
-        overflow: hidden;
-        img{
-          width: 100%;
+        height: 75%;
+        @media screen and (max-width: 1024px){
+          margin-top: 30px;
+          height: 74%;
+        }
+        @media screen and (max-width: 768px){
+          height: 70%;
+        }
+        .swiper-wrapper{
+          height: 100%;
         }
     }
+    .main-swiper{
+      display: flex;
+      img{
+        height: 100%;
+        margin: auto;
+        width: auto;
+      }
+
+  }
+    #thumbnail{
+      height: 25%;
+
+      @media screen and (max-width: 1024px){
+        margin-top: 0px;
+        .swiper-container{
+          margin-top: 0px;
+        }
+      }
+      @media screen and (max-width: 768px){
+        height: 30%;
+      }
+      .swiper-container{
+        height: 100%;
+      }
+      .thumbnail-swiper{
+          overflow: hidden;
+          position: relative;
+          padding-top: 40px;
+          &.swiper-slide-active{
+            border: 3px solid red;
+            &:after{
+              content: '';
+              position: absolute;
+              width: 40px;
+              height: 40px;
+              background-color: red;
+              top: 0;
+              left: 0;
+            }
+          }
+          img{
+            width: 100%;
+          }
+      }
+    }
+  .close-button{
+    position: absolute;
+    top: 20px;
+    right: 0px;
+  }
+  &.vertical{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 0.5);
+    height: 100vh;
+    width: 100vw;
+    z-index: 1030;
+    .content{
+      margin: auto;
+    }
+    svg{
+      fill: white;
+      font-size: 50px;
+      float: right;
+      margin-right: 40px;
+      margin-bottom: -25px;
+      z-index: 100;
+    }
+    .swiper-container{
+        height: 100%;
+        width: 70%;
+        float: left;
+        .swiper-wrapper{
+          height: 100%;
+        }
+    }
+    .main-swiper{
+      display: flex;
+      img{
+        height: 100%;
+        margin: auto;
+        width: auto;
+        float: right;
+      }
+
+  }
+    #thumbnail{
+      width: 20%;
+      height: 100%;
+      float: left;
+      .swiper-container{
+        height: 100%;
+      }
+      .thumbnail-swiper{
+          overflow: hidden;
+          img{
+            height: auto;
+            width: 100%;
+          }
+      }
+    }
   }
 }
+
 .contact-card{
   width: 500px;
   background-color: white;
   border: 1px solid grey;
   position: absolute;
-  right: 10px;
+  right: 0px;
   top: 70px;
   text-align: center;
   padding: 30px;
@@ -280,14 +381,18 @@ footer{
     color: black;
     text-transform: lowercase;
   }
+  .close-button{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 100;
+    cursor: pointer;
+    svg{
+      font-size: 30px;
+    }
+  }
 }
-.close-button{
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  z-index: 100;
-  cursor: pointer;
-}
+
 @media screen and (max-width: 768px){
   .element{
     width: 50%;
@@ -305,19 +410,28 @@ footer{
   .element.right{
     padding: 0 10px;
   }
+  .element-press{
+    width: 50%;
+    padding: 10px;
+    float: left;
+  }
+  .element-press.full-width{
+    width: 100%;
+  }
+  .element-press img{
+    width: 100%;
+  }
+  .hero-space{
+    height: initial;
+    margin-top: 0;
+    .swiper-container{
+      .swiper-wrapper{
+        height: 100%;
+      }
+    }
+  }
 }
 
-.element-press{
-  width: 50%;
-  padding: 10px;
-  float: left;
-}
-.element-press.full-width{
-  width: 100%;
-}
-.element-press img{
-  width: 100%;
-}
 
 @media screen and (max-width: 600px){
   .right-nav{
@@ -326,5 +440,11 @@ footer{
   .element{
     width: 100%;
     padding: 0!important;
+  }
+  .gallery-nav {
+    display: block;
+    button{
+      width: 100%;
+    }
   }
 }

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import $ from 'jquery'
 
-
 import { HorizontalSwiper, VerticalSwiper, ImageGallery } from './index'
 
 import {fashion_swiper,
@@ -47,10 +46,12 @@ const HomeBody = () => {
         });
       });
 
-    
+
 
 
   }, [])
+
+
 
 return(
   <div>
@@ -73,16 +74,16 @@ return(
 
 
       {
-        home_swiper && home_swiper.map(item => <ImageGallery {...item} openSlider={setIsHorizontalSliderOpen} openVericalSlider={setIsVerticalSliderOpen}/>)
+        home_swiper && home_swiper.map(item => <ImageGallery {...item} openSliderHorizontal={setIsHorizontalSliderOpen} openVericalSlider={setIsVerticalSliderOpen}/>)
       }
       {
-        fashion_swiper && fashion_swiper.map(item => <ImageGallery {...item} openSlider={setIsHorizontalSliderOpen} openVericalSlider={setIsVerticalSliderOpen}/>)
+        fashion_swiper && fashion_swiper.map(item => <ImageGallery {...item} openSliderHorizontal={setIsHorizontalSliderOpen} openVericalSlider={setIsVerticalSliderOpen}/>)
       }
       {
-        still_swiper && still_swiper.map(item => <ImageGallery {...item} openSlider={setIsHorizontalSliderOpen} openVericalSlider={setIsVerticalSliderOpen}/>)
+        still_swiper && still_swiper.map(item => <ImageGallery {...item} openSliderHorizontal={setIsHorizontalSliderOpen} openVericalSlider={setIsVerticalSliderOpen}/>)
       }
       {
-        theatre_swiper && theatre_swiper.map(item => <ImageGallery {...item} openSlider={setIsHorizontalSliderOpen} openVericalSlider={setIsVerticalSliderOpen}/>)
+        theatre_swiper && theatre_swiper.map(item => <ImageGallery {...item} openSliderHorizontal={setIsHorizontalSliderOpen} openVericalSlider={setIsVerticalSliderOpen}/>)
       }
 
 

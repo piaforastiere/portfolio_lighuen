@@ -48,11 +48,11 @@ const HorizontalSwiper = ({path, closeSlide, cursor}) => {
 
     const gallerySwiperParams = {
       getSwiper: getGallerySwiper,
-      spaceBetween: 10,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
+      spaceBetween: 0,
+      // navigation: {
+      //   nextEl: '.swiper-button-next',
+      //   prevEl: '.swiper-button-prev',
+      // },
       loopedSlides: true,
       on: {
         slideNext: function () {
@@ -102,6 +102,7 @@ const HorizontalSwiper = ({path, closeSlide, cursor}) => {
     <div className="lightbox">
       { listOfImages.length === 0 && <Spinner />}
 
+
         <Swiper {...gallerySwiperParams} shouldSwiperUpdate={true}>
           {
             listOfImages && listOfImages.map(
@@ -126,6 +127,7 @@ const HorizontalSwiper = ({path, closeSlide, cursor}) => {
             }
           </Swiper>
         </div>
+
         <CloseButton closeSlide={closeSlide}/>
       </div>
 

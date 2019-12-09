@@ -1,6 +1,7 @@
-import React,{ useState} from 'react'
+import React,{ useState, useEffect} from 'react'
 import Link from 'next/link'
 import { FaFacebookF, FaInstagram, FaVimeoV, FaEnvelope }from 'react-icons/fa'
+import $ from 'jquery'
 
 import Press from './Press'
 import Contact from './Contact'
@@ -9,6 +10,14 @@ import Contact from './Contact'
 const Nav = () => {
    const [contactOpen, setContactOpen] = useState(false)
 
+  // useEffect(() => {
+  //   var jQueryBridget = require('jquery-bridget');
+  //
+  //   $('.navbar-toggler').click(function(){
+  //     $('.collapse').css('display', 'block')
+  //   })
+  //
+  // }, [])
   return(
     <nav className="sticky-top navbar navbar-expand-lg navbar-light">
 

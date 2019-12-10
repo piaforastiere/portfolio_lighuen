@@ -25,34 +25,34 @@ import HeroSlide from './HeroSlide'
         <div className="hero-space">
 
             <Swiper {...params}>
-              <div className="swiper-slide">
+              <div className="swiper-slide" key="0">
                 <img src="../img/hero/Slider-Foto1.jpg" alt=""/>
               </div>
-              <div className="swiper-slide">
+              <div className="swiper-slide" key="1">
                 <img src="../img/hero/Slider-Foto2.jpg" alt=""/>
               </div>
-              <div className="swiper-slide">
+              <div className="swiper-slide" key="2">
                 <img src="../img/hero/Slider-Foto3.jpg" alt=""/>
               </div>
-              <div className="swiper-slide">
+              <div className="swiper-slide" key="3">
                 <img src="../img/hero/Slider-Foto4.jpg" alt=""/>
               </div>
-              <div className="swiper-slide">
+              <div className="swiper-slide" key="4">
                 <img src="../img/hero/Slider-Foto5.jpg" alt=""/>
               </div>
-              <div className="swiper-slide">
+              <div className="swiper-slide" key="5">
                 <img src="../img/hero/Slider-Foto6.jpg" alt=""/>
               </div>
-              <div className="swiper-slide">
+              <div className="swiper-slide" key="6">
                 <img src="../img/hero/Slider-Foto7.jpg" alt=""/>
               </div>
-              <div className="swiper-slide">
+              <div className="swiper-slide" key="7">
                 <img src="../img/hero/Slider-Foto8.jpg" alt=""/>
               </div>
-              <div className="swiper-slide">
+              <div className="swiper-slide" key="8">
                 <img src="../img/hero/Slider-Foto9.jpg" alt=""/>
               </div>
-              <div className="swiper-slide" >
+              <div className="swiper-slide" key="9">
                 <img src="../img/hero/Slider-Foto10.jpg" alt=""/>
               </div>
             </Swiper>

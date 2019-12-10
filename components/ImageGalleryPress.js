@@ -11,11 +11,10 @@ const [image, setImage] = useState([])
   return(
 
 
-    <a href={link}>
-    <div className={`${classes}`}
-         key={mainImg}>
-      <img src={mainImg} alt="" />
-    </div>
+    <a href={link} target='_blank' key={mainImg}>
+      <div className={`${classes}`}>
+        <img src={mainImg} alt="" />
+      </div>
     </a>
 
   )

@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "extract": "NODE_ENV=production next build && NODE_ENV=production next export"
   },
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
@@ -31,6 +32,7 @@
     "react-ionicons": "^3.0.1",
     "react-popupbox": "^2.0.8",
     "react-swipe": "^6.0.4",
+    "react-uuid": "^1.0.2",
     "reactstrap": "^8.1.1",
     "scrollmagic": "^2.0.7",
     "swipe-js-iso": "^2.1.5",

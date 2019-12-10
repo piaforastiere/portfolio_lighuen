@@ -12,7 +12,7 @@ export default [
 
   },
   {
-   link: 'https://www.timeout.es/madrid/es/teatro/the-opera-locos',
+   link:'',
     classes:"element-press",
       mainImg:"/img/press/Press-Foto3.jpg",
 

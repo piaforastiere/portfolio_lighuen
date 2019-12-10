@@ -12,6 +12,41 @@ body * {
   font-size: 15px;
   background-color: #fff;
   position: fixed;
+  .collapse{
+    @media screen and (max-width: 995px){
+      background-color: white;
+      padding: 0 20px;
+      &.active{
+        display: block;
+      }
+    }
+  }
+  .navbar-toggler{
+    border: none;
+    &:focus{
+      outline:0;
+    }
+    .navbar-toggler-icon-top{
+      height: 2px;
+      width: 25px;
+      background: #4C4C4C;
+      margin-bottom: 3.5px;
+      &.active{
+        margin-bottom: -1.5px;
+        transform: rotate(45deg);
+      }
+    }
+    .navbar-toggler-icon-bottom{
+      height: 2px;
+      width: 25px;
+      background: #4C4C4C;
+      margin-top: 3.5px;
+      &.active{
+        transform: rotate(-45deg);
+        margin: 0px;
+      }
+    }
+  }
 }
 .nav-link{
   cursor: pointer;
@@ -37,7 +72,7 @@ body * {
 }
 .right-nav{
   float: right;
-  width: 20%;
+  width: initial;
 
 }
 .hero-space{
@@ -80,12 +115,15 @@ body * {
   list-style-type:none
 }
 .gallery-nav button{
-  width: 20%;
+  width: 30%;
   list-style-type: none;
   color: #000;
   border: none;
   background: transparent;
   text-transform: uppercase;
+  &.is-checked{
+    font-weight: bold;
+  }
 }
 button:focus{
   outline:0;
@@ -241,6 +279,11 @@ footer{
       margin-right: 40px;
       margin-bottom: -25px;
       z-index: 100;
+      @media screen and (max-width: 600px){
+        margin-right: 0px;
+        margin-top: -20px;
+        font-size: 40px;
+      }
     }
     .swiper-container{
         height: 75%;
@@ -266,7 +309,7 @@ footer{
   }
     #thumbnail{
       height: 25%;
-
+      overflow: hidden;
       @media screen and (max-width: 1024px){
         margin-top: 0px;
         .swiper-container{
@@ -284,19 +327,21 @@ footer{
           position: relative;
           padding-top: 40px;
           &.swiper-slide-active{
-            border: 3px solid red;
             &:after{
-              content: '';
+              content: '\2609';
               position: absolute;
               width: 40px;
               height: 40px;
-              background-color: red;
-              top: 0;
-              left: 0;
+              top: 0px;
+              left:-3px;
+              text-align: center;
+              font-size: 35px;
+              color: white;
             }
           }
           img{
             width: 100%;
+            cursor: pointer;
           }
       }
     }
@@ -304,6 +349,12 @@ footer{
     position: absolute;
     top: 20px;
     right: 0px;
+    z-index: 100000;
+    cursor: pointer;
+    @media screen and (max-width: 678px){
+      top: -8px;
+      right: -20px;
+    }
   }
   &.vertical{
     position: fixed;
@@ -363,12 +414,16 @@ footer{
 .contact-card{
   width: 500px;
   background-color: white;
-  border: 1px solid grey;
+  border-radius: 20px;
   position: absolute;
   right: 0px;
-  top: 70px;
+  top: 0px;
   text-align: center;
   padding: 30px;
+  -webkit-box-shadow: 0px 8px 29px -11px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 8px 29px -11px rgba(0,0,0,0.75);
+  box-shadow: 0px 8px 29px -11px rgba(0,0,0,0.75);
+  z-index: 10;
   svg{
     font-size: 50px;
     fill: black;
@@ -392,8 +447,50 @@ footer{
     }
   }
 }
+.element-press{
+  width: 50%;
+  padding: 10px;
+  float: left;
+}
+.element-press.full-width{
+  width: 100%;
+}
+.element-press img{
+  width: 100%;
+}
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 995px){
+  .hero-space{
+    height: initial;
+    .swiper-container{
+      .swiper-wrapper{
+        height: initial;
+      }
+    }
+  }
+.navbar-nav{
+    flex-direction: row!important;
+
+  }
+  .left-nav{
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    .nav-item{
+      width: 50%;
+      text-align: center;
+    }
+  }
+  .right-nav{
+    width: 100%;
+    .nav-item{
+      width: 25%;
+      text-align: center;
+    }
+  }
+  // .contact-card{
+  //   right: 15px;
+  //   top: 113px;
+  // }
   .element{
     width: 50%;
     margin-bottom: 20px!important;
@@ -410,17 +507,10 @@ footer{
   .element.right{
     padding: 0 10px;
   }
-  .element-press{
-    width: 50%;
-    padding: 10px;
-    float: left;
-  }
-  .element-press.full-width{
-    width: 100%;
-  }
-  .element-press img{
-    width: 100%;
-  }
+}
+@media screen and (max-width: 768px){
+
+
   .hero-space{
     height: initial;
     margin-top: 0;
@@ -430,21 +520,29 @@ footer{
       }
     }
   }
+
+  .element-press{
+    width: 100%;
+  }
 }
 
 
 @media screen and (max-width: 600px){
-  .right-nav{
-    display: inline-block;
-  }
+
   .element{
     width: 100%;
     padding: 0!important;
   }
+  .navbarGallery{
+    width: 110%;
+    margin-left: -5%;
+  }
   .gallery-nav {
     display: block;
+    height: 100px;
     button{
       width: 100%;
+      height: 30px;
     }
   }
 }

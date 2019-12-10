@@ -11,6 +11,7 @@ import {
   HeroSwiper,
    Files,
    HomeBody,
+   Press
     } from '../components'
 
 
@@ -32,9 +33,8 @@ const Home = () => (
 
 
 
-    <script src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js" crossOrigin />
 
-    <script src="js/scrollmagic/minified/ScrollMagic.min.js"></script>
+    
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
   </div>

@@ -4,6 +4,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto1.jpg",
     description: 'Black Apple. - Los Dedae',
     model: '',
+    position: '',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 1"
   },
   {
@@ -11,6 +12,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto2.jpg",
     description: 'Black Apple. - Los Dedae',
     model: '',
+    position: '',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 1"
   },
   {
@@ -18,6 +20,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto3.jpg",
     description: 'Black Apple. - Los Dedae',
     model: '',
+    position: '',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 1"
   },
 
@@ -26,6 +29,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto4.jpg",
     description: 'La Familia Addams Musical',
     model: '',
+    position: '',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 2"
   },
   {
@@ -33,6 +37,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto5.jpg",
     description: 'La Familia Addams Musical',
     model: '',
+    position: '',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 2"
   },
   {
@@ -40,6 +45,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto6.jpg",
     description: 'La Familia Addams Musical',
     model: '',
+    position: '',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 2"
   },
 
@@ -48,6 +54,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto7.jpg",
     description: 'Wintergarten Theatre, Berlin',
     model: '',
+    position: '',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 3"
   },
   {
@@ -55,6 +62,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto8.jpg",
     description: 'Wintergarten Theatre, Berlin',
     model: '',
+    position: '',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 3"
   },
   {
@@ -62,6 +70,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto9.jpg",
     description: 'Wintergarten Theatre, Berlin',
     model: '',
+    position: '',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 3"
   },
 
@@ -128,6 +137,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto18.jpg",
     description: 'Boutelis - Cie Lapsus',
     model: '',
+    position: '',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 6"
   },
   {
@@ -135,6 +145,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto17.jpg",
     description: 'Boutelis - Cie Lapsus',
     model: '',
+    position: '',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 6"
   },
   {
@@ -142,6 +153,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto19.jpg",
     description: 'Boutelis - Cie Lapsus',
     model: '',
+    position: '',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 6"
   },
 
@@ -150,6 +162,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto21.jpg",
     description: 'The Hole Show',
     model: '',
+    position: '',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 7"
   },
   {
@@ -157,6 +170,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto20.jpg",
     description: 'The Hole Show',
     model: '',
+    position: '',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 7"
   },
   {
@@ -164,6 +178,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto22.jpg",
     description: 'The Hole Show',
     model: '',
+    position: '',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 7"
   },
 
@@ -206,6 +221,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto28.jpg",
     description: 'Jovencito Frankestein Musical',
     model: '',
+    position: '',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 9"
   },
   {
@@ -213,6 +229,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto27.jpg",
     description: 'Jovencito Frankestein Musical',
     model: '',
+    position: '',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 9"
   },
 
@@ -221,6 +238,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto29.jpg",
     description: 'Jovencito Frankestein Musical',
     model: '',
+    position: '',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 9"
   },
   {
@@ -228,6 +246,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto31.jpg",
     description: 'Dirty Dancing Musical',
     model: '',
+    position: '',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 10"
   },
 
@@ -236,6 +255,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto30.jpg",
     description: 'Dirty Dancing Musical',
     model: '',
+    position: '',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 10"
   },
   {
@@ -243,6 +263,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto32.jpg",
     description: 'Dirty Dancing Musical',
     model: '',
+    position: '',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 10"
   },
 
@@ -284,6 +305,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto38.jpg",
     description: 'HOTEL HABANA SHOW',
     model: '',
+    position: '',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 12"
   },
   {
@@ -291,6 +313,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto37.jpg",
     description: 'HOTEL HABANA SHOW',
     model: '',
+    position: '',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 12"
   },
   {
@@ -298,6 +321,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto39.jpg",
     description: 'HOTEL HABANA SHOW',
     model: '',
+    position: '',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 12"
   },
 
@@ -446,6 +470,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto58.jpg",
     description: 'The Hole Show ARG',
     model: '',
+    position: '',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 17"
   },
   {
@@ -453,6 +478,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto57.jpg",
     description: 'The Hole Show ARG',
     model: '',
+    position: '',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 17"
   },
   {
@@ -460,6 +486,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto59.jpg",
     description: 'The Hole Show ARG',
     model: '',
+    position: '',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 17"
   },
 
@@ -468,6 +495,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto61.jpg",
     description: '',
     model: '',
+    position: '',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 18"
   },
   {
@@ -475,6 +503,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto60.jpg",
     description: '',
     model: '',
+    position: '',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 18"
   },
   {
@@ -482,6 +511,7 @@ export default [
     mainImg:"/img/theatre/Theatre&Dance-Foto62.jpg",
     description: '',
     model: '',
+    position: '',
     path:"/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox theatre & dance/theatre & dance - lightbox fila 18"
   },
 

@@ -6,8 +6,7 @@ import $ from 'jquery'
 import Press from './Press'
 import Contact from './Contact'
 
-
-const Nav = () => {
+const NavPress = () => {
    const [contactOpen, setContactOpen] = useState(false)
 
   useEffect(() => {
@@ -15,12 +14,20 @@ const Nav = () => {
 
     $('.navbar-toggler').click(function(){
       $('.collapse').toggleClass('active')
+
       $('.navbar-toggler div').toggleClass('active')
     })
 
   }, [])
 
+  useEffect(() => {
+    var jQueryBridget = require('jquery-bridget');
 
+    $('.left-nav').click(function(){
+      $("ul", this).addClass('active')
+      console.log($(this))
+    })
+  })
   return(
     <nav className="sticky-top navbar navbar-expand-lg navbar-light">
 
@@ -32,31 +39,31 @@ const Nav = () => {
         <a className="navbar-brand">LIGHUEN <br/><span>DESANTO</span></a>
         </Link>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <div className="navbar-toggler-icon-top"></div>
-            <div className="navbar-toggler-icon-bottom"></div>
+          <div className="navbar-toggler-icon-top"></div>
+          <div className="navbar-toggler-icon-bottom"></div>
           </button>
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav left-nav">
           <Link href="/">
-            <li className="nav-item active">
+            <li className="nav-item">
               <a className="nav-link" >Home <span className="sr-only">(current)</span></a>
             </li>
           </Link>
           <Link href="/press">
-            <li className="nav-item">
+            <li className="nav-item active">
               <a className="nav-link">Press</a>
             </li>
           </Link>
           </ul>
           <ul className="navbar-nav right-nav">
             <li className="nav-item">
-              <a className="nav-link" href="https://www.facebook.com/lighuendesantophoto/" target="_blank"><FaFacebookF /></a>
+              <a className="nav-link" href="#"><FaFacebookF /></a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="https://www.instagram.com/lighuendesanto/?hl=es" target="_blank"><FaInstagram /></a>
+              <a className="nav-link" href="#"><FaInstagram /></a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="https://vimeo.com/lighuendesanto" target="_blank"><FaVimeoV /></a>
+              <a className="nav-link" href="#"><FaVimeoV /></a>
             </li>
             <li className="nav-item" onClick={() => setContactOpen(true)}>
               <a className="nav-link" href="#"><FaEnvelope /></a>
@@ -67,4 +74,4 @@ const Nav = () => {
   )
 }
 
-export default Nav
+export default NavPress

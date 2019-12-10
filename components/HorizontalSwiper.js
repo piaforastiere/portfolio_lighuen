@@ -17,8 +17,7 @@ const HorizontalSwiper = ({path, closeSlide, cursor}) => {
   const [gallerySwiper, getGallerySwiper] = useState(null);
   const [thumbnailSwiper, getThumbnailSwiper] = useState(null);
   const [listOfImages, setListOfImages] = useState([])
-
-  console.log({listOfImages})
+  const [entireImageCall, setEntireImageCall] = useState(null)
 
   const getSingleImages = async (images) => {
     try {
@@ -35,15 +34,28 @@ const HorizontalSwiper = ({path, closeSlide, cursor}) => {
 
   }
 
-  const getFiles = () => {
+  const getFiles = async () => {
 
-    dbx.filesListFolder({
+    const newImages = await dbx.filesListFolder({
       "path": path,
       "recursive": false,
       "limit": 6
-    }).then(images =>
-         setImages(images.entries)
-       )
+    })
+    setImages([...newImages.entries])
+    setEntireImageCall(newImages)
+
+  }
+
+  const getMoreFiles = async (cursor, setImages, images) => {
+    const newImages = await dbx.filesListFolderContinue({
+      cursor,
+    })
+    setImages([
+      ...images,
+      ...newImages.entries,
+    ])
+    setEntireImageCall(newImages)
+
   }
 
     const gallerySwiperParams = {
@@ -55,24 +67,39 @@ const HorizontalSwiper = ({path, closeSlide, cursor}) => {
       // },
       loopedSlides: true,
       on: {
-        slideNext: function () {
-          console.log('xxx')
-          dbx.filesListFolderContinue({
-            "cursor": images.cursor,
-          }).then((e) => {
-            console.log(e)
-          })
+        init: function () {
+
         },
       }
     };
     const thumbnailSwiperParams = {
       getSwiper: getThumbnailSwiper,
-      spaceBetween: 10,
+      spaceBetween: 0,
       centeredSlides: true,
-      slidesPerView: 5,
+      slidesPerView: 10,
       touchRatio: 0.2,
       slideToClickedSlide: true,
       loopedSlides: true,
+      breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 2,
+        },
+        // when window width is >= 480px
+        480: {
+          slidesPerView: 3,
+        },
+        // when window width is >= 640px
+        640: {
+          slidesPerView: 4,
+        },
+        1300 : {
+          slidesPerView: 6,
+        },
+        1400: {
+          slidesPerView: 6,
+        }
+      }
     };
 
     useEffect(() => {
@@ -84,6 +111,13 @@ const HorizontalSwiper = ({path, closeSlide, cursor}) => {
       if (!images) return
       getSingleImages(images)
     }, [images]);
+
+    useEffect(() => {
+      if (!entireImageCall) return
+      if(entireImageCall.has_more) {
+        getMoreFiles(entireImageCall.cursor, setImages, images)
+      }
+    }, [entireImageCall])
 
     useEffect(() => {
       if (

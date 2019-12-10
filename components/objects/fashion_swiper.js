@@ -113,6 +113,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto13.jpg",
     description: 'PURE PACHA',
     model: '',
+    position: '',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 4"
   },
 
@@ -121,6 +122,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto15.jpg",
     description: 'ANNI ULM',
     model: '',
+    position: '',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 5"
   },
 
@@ -129,6 +131,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto14.jpg",
     description: 'ANNI ULM',
     model: '',
+    position: '',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 5"
   },
 
@@ -137,6 +140,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto16.jpg",
     description: 'ANNI ULM',
     model: '',
+    position: '',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 5"
   },
 
@@ -145,6 +149,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto18.jpg",
     description: 'INFLABLES IBIZA PHOTO SERIE',
     model: '',
+    position: '',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 6"
   },
 
@@ -153,6 +158,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto17.jpg",
     description: 'INFLABLES IBIZA PHOTO SERIE',
     model: '',
+    position: '',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 6"
   },
 
@@ -161,6 +167,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto19.jpg",
     description: 'INFLABLES IBIZA PHOTO SERIE',
     model: '',
+    position: '',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 6"
   },
 
@@ -224,6 +231,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto27.jpg",
     description: 'Santa Kyra x Antonio Velasco',
     model: '',
+    position: '',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 9"
   },
 
@@ -232,6 +240,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto26.jpg",
     description: 'Santa Kyra x Antonio Velasco',
     model: '',
+    position: '',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 9"
   },
 
@@ -240,6 +249,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto28.jpg",
     description: 'Santa Kyra x Antonio Velasco',
     model: '',
+    position: '',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 9"
 
   },
@@ -248,6 +258,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto31.jpg",
     description: 'NUMERO 00 - Soleetka',
     model: '',
+    position: '',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 10"
   },
   {
@@ -306,6 +317,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto36.jpg",
     description: 'MARIA HINOJOSA',
     model: '',
+    position: '',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 12"
   },
 
@@ -316,6 +328,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto35.jpg",
     description: 'MARIA HINOJOSA',
     model: '',
+    position: '',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 12"
   },
   {
@@ -385,6 +398,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto46.jpg",
     description: 'Maipo Portraits',
     model: '',
+    position: '',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 15"
   },
 
@@ -393,6 +407,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto47.jpg",
     description: 'Maipo Portraits',
     model: '',
+    position: '',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 15"
   },
 
@@ -401,6 +416,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto45.jpg",
     description: 'Maipo Portraits',
     model: '',
+    position: '',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 15"
   },
 
@@ -436,6 +452,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto51.jpg",
     description: 'Israel Mata',
     model: '',
+    position: '',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 16"
   },
 
@@ -500,6 +517,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto58.jpg",
     description: 'Bob Sinclar - Paris by Night',
     model: '',
+    position: '',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 19"
   },
 
@@ -508,6 +526,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto59.jpg",
     description: 'Bob Sinclar - Paris by Night',
     model: '',
+    position: '',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 19"
   },
 
@@ -516,6 +535,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto60.jpg",
     description: 'Bob Sinclar - Paris by Night',
     model: '',
+    position: '',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 19"
   },
 
@@ -524,6 +544,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto61.jpg",
     description: 'MILK',
     model: '',
+    position: '',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 20"
   },
 
@@ -532,6 +553,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto62.jpg",
     description: 'MILK',
     model: '',
+    position: '',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 20"
   },
 
@@ -540,6 +562,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto63.jpg",
     description: 'MILK',
     model: '',
+    position: '',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 20"
   },
 
@@ -548,6 +571,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto64.jpg",
     description: '',
     model: '',
+    position: '',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 21"
   },
 
@@ -556,6 +580,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto65.jpg",
     description: '',
     model: '',
+    position: '',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 21"
   },
 
@@ -564,6 +589,7 @@ export default  [
     mainImg:"/img/fashion/Fashion&Portrait-Foto66.jpg",
     description: '',
     model: '',
+    position: '',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox fashion & portrait/fashion & portrait - lightbox fila 21"
   },
 

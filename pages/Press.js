@@ -1,7 +1,8 @@
 import React,{ useState, useEffect} from 'react'
 import Head from 'next/head'
-import Nav from '../components/nav'
+import NavPress from '../components/navPress'
 import $ from 'jquery'
+import uuid from 'react-uuid'
 
 import ImageGalleryPress from '../components/ImageGalleryPress'
 import { press } from '../components/objects'
@@ -12,19 +13,26 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 const Press = () => {
 
 
-useEffect( () => {
+  useEffect(() => {
+      var jQueryBridget = require('jquery-bridget');
+      var Isotope = require('isotope-layout');
+      jQueryBridget( 'isotope', Isotope, $ );
 
-  var jQueryBridget = require('jquery-bridget');
-  var Isotope = require('isotope-layout');
-  jQueryBridget( 'isotope', Isotope, $ );
+      if(!$) return //guardia
 
-  if(!$) return //guardia
+      // init Isotope
+      var $grid = $('.grid').isotope({
+        itemSelector: '.element-press',
 
-  // init Isotope
-  var $grid = $('.grid').isotope({
-  });
+      });
 
-}, [])
+
+
+
+
+
+  }, [])
+
   return(
     <div>
     <Head>
@@ -36,18 +44,17 @@ useEffect( () => {
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
     </Head>
 
-    <Nav />
-    <div class="container" id="press-gallery">
-      <div class="row">
-        <h3 class="title-press">
+    <NavPress />
+    <div className="container" id="press-gallery">
+      <div className="row">
+        <h3 className="title-press">
           Press Publications
         </h3>
       </div>
-      <div id="container" class="gallery ">
+      <div id="container" className="gallery ">
       {
-        press && press.map(item => <ImageGalleryPress {...item} />)
+        press && press.map(item => <ImageGalleryPress {...item} key={item.mainImg}/>)
       }
-
 
       </div>
 

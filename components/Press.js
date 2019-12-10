@@ -1,8 +1,10 @@
 import React,{ useState, useEffect} from 'react'
 import $ from 'jquery'
+import uuid from 'react-uuid'
 
 import ImageGalleryPress from './ImageGalleryPress'
 import { press } from './objects'
+
 const Press = () => {
 
 
@@ -21,15 +23,15 @@ useEffect( () => {
 }, [])
   return(
     <div>
-    <div class="container" id="press-gallery">
-      <div class="row">
-        <h3 class="title-press">
+    <div className="container" id="press-gallery">
+      <div className="row">
+        <h3 className="title-press">
           Press Publications
         </h3>
       </div>
-      <div id="container" class="gallery ">
+      <div id="container" className="gallery ">
       {
-        press && press.map(item => <ImageGalleryPress {...item} />)
+        press && press.map(item => <ImageGalleryPress {...item} key={uuid()}/>)
       }
 
 

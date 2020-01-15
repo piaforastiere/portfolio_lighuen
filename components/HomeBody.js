@@ -8,48 +8,98 @@ import {fashion_swiper,
       theatre_swiper,
       home_swiper } from './objects'
 
+import { Spinner, CountDown } from './'
+
 const HomeBody = () => {
 
   const [path, setPath] = useState([])
   const [isHorizontalSliderOpen, setIsHorizontalSliderOpen] = useState(false)
   const [isVerticalSliderOpen, setIsVerticalSliderOpen] = useState(false)
-
-  useEffect(() => {
-      var jQueryBridget = require('jquery-bridget');
-      var Isotope = require('isotope-layout');
-      jQueryBridget( 'isotope', Isotope, $ );
-
-      if(!$) return //guardia
-
-      // init Isotope
-      var $grid = $('.grid').isotope({
-        itemSelector: '.element',
-        filter: '.HOME',
-      });
-      // filter functions
-      var filterFns = {
-
-      };
-      // bind filter button click
-      $('.filters-button-group').on( 'click', 'button', function() {
-        var filterValue = $( this ).attr('data-filter');
-        // use filterFn if matches value
-        filterValue = filterFns[ filterValue ] || filterValue;
-        $grid.isotope({ filter: filterValue });
-      });
-      // change is-checked class on buttons
-      $('.button-group').each( function( i, buttonGroup ) {
-        var $buttonGroup = $( buttonGroup );
-        $buttonGroup.on( 'click', 'button', function() {
-          $buttonGroup.find('.is-checked').removeClass('is-checked');
-          $( this ).addClass('is-checked');
-        });
-      });
+  const [countDown, setCountDown] = useState(true)
+  //isotope
+  // store the isotope object in one state
+  const [isotope, setIsotope] = useState(null);
+  // store the filter keyword in another state
+  const [filterKey, setFilterKey] = useState("*");
 
 
 
 
-  }, [])
+function changeAttribute(){
+  var fashion = document.querySelectorAll('.fashion img')
+
+  fashion.forEach( element =>
+      element.setAttribute("src", element.getAttribute("data-img"))
+    )
+
+  var still = document.querySelectorAll('.still img')
+
+  still.forEach( element =>
+      element.setAttribute("src", element.getAttribute("data-img"))
+    )
+
+  var theatre = document.querySelectorAll('.theatre img')
+  theatre.forEach( element =>
+      element.setAttribute("src", element.getAttribute("data-img"))
+    )
+}
+
+ useEffect( () => {
+   // main.js
+ var imagesLoaded = require('imagesloaded');
+
+ imagesLoaded( '.grid', function() {
+
+   setIsotope(
+     new Isotope(".grid", {
+       itemSelector: ".element",
+       percentPosition: true,
+       layoutMode: "masonry",
+     })
+
+   )
+
+  setCountDown(false)
+
+  changeAttribute()
+
+ })
+}, [countDown])
+
+
+useEffect( () => {
+
+  var elmnt = document.getElementById("grid");
+
+
+  var headerOffset = 70;
+  const bodyRect = document.body.getBoundingClientRect().top;
+  const elementRect = elmnt.getBoundingClientRect().top;
+  const elementPosition = elementRect - bodyRect;
+  const offsetPosition = elementPosition - headerOffset;
+
+
+
+
+
+  if (isotope) {
+    filterKey === "*"
+      ? isotope.arrange({ filter: `.HOME` })
+    : isotope.arrange({ filter: `.${filterKey}` },
+      window.scrollTo({
+           top: offsetPosition,
+           behavior: "smooth"
+      }),
+      document.getElementById('full-width-container').style.display = 'none'
+
+    )
+  }
+
+
+},[isotope, filterKey, countDown])
+
+
+
 
 
 
@@ -60,14 +110,14 @@ return(
   {isVerticalSliderOpen && <HorizontalSwiper {...isVerticalSliderOpen} closeSlide={() => setIsVerticalSliderOpen(false)}/>}
 
 
-
-
-  <div className="container">
+  <div className="mainContainer">
+{ countDown && <CountDown /> }
+  <div className="container" id="grid">
   <div className="navbarGallery">
     <div className="button-group filters-button-group gallery-nav" id="filters">
-      <button className="button" data-filter=".fashion">fashion</button>
-      <button className="button" data-filter=".still">still photography</button>
-      <button className="button" data-filter=".theatre">theatre</button>
+      <button className="button" onClick={() => setFilterKey("fashion")}>fashion & Portrait</button>
+      <button className="button" onClick={() => setFilterKey("still")}>still photography</button>
+      <button className="button" onClick={() => setFilterKey("theatre")}>theatre & Dance</button>
     </div>
   </div>
 
@@ -89,8 +139,20 @@ return(
 
 
   </div>
-  </div>
 
+    <div className="full-width-container" id="full-width-container">
+      <div className="video-responsive">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/yOcyz_ZaP0c" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+      </div>
+
+      <div className="video-responsive">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/pzYFVmYJWM8" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+      </div>
+    </div>
+
+
+  </div>
+  </div>
   </div>
   )
 }

@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import { FaRegComments } from 'react-icons/fa'
-import {IoIosClose} from 'react-icons/io'
+import { IoIosClose, IoIosMailOpen, IoIosPhonePortrait } from 'react-icons/io'
+import { TiLocationOutline } from "react-icons/ti"
 
 const Contact = ({closeContact}) => {
 
@@ -9,17 +10,38 @@ const Contact = ({closeContact}) => {
     <div className="close-button">
       <IoIosClose onClick={() => closeContact()}/>
     </div>
-    <FaRegComments />
+      <div className="row">
+      <div className="profilePic">
+        <img src="/img/profile.jpg" alt=""/>
+      </div>
+      </div>
+    <div className="contactInfo">
+
+      <div className="header">
       <h2 className="contact-title">
-        For more information you can:
+        Lighuen Desanto
       </h2>
-    <p> send an email to: <br/>
-      <a href="mailto:info@lighuendesanto.com" target="_blank">info@lighuendesanto.com</a>
-    </p>
-    <p>
-      Or give me a call to <br/>
-      <a href="tel:34692181687">+34 692 18 16 87</a>
-    </p>
+      <div className="location">
+        <TiLocationOutline />
+        <a href="https://goo.gl/maps/UmPFReVnbVV8wZeD9" target="_blank">
+          <span>Madrid</span>, España.
+        </a>
+      </div>
+
+        </div>
+      <p className="contacts-email">
+        <IoIosMailOpen/>
+        <a href="mailto:info@lighuendesanto.com">
+        info@lighuendesanto.com
+        </a>
+      </p>
+      <p className="contacts-phone">
+        <IoIosPhonePortrait />
+        <a href="tel:34692181687">
+        +34 692 18 16 87
+        </a>
+      </p>
+    </div>
 
     </div>
   )

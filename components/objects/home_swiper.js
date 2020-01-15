@@ -18,7 +18,7 @@ export default  [
   {
     classes: 'element HOME right',
     mainImg: '/img/HOME/Home-Columna3-Foto1.jpg',
-    description: '',
+    description: 'JUANA - Teatro Español',
     model: '',
     position: 'vertical',
     path: '/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox home/home - lightboxs columna 3/lightbox columna 3 - foto 1'
@@ -294,5 +294,6 @@ export default  [
     position: '',
     path: "/web_portfolio_api/estructura de fotos para  web lighuen desanto/lightboxs/lightbox home/home - lightboxs columna 3/lightbox columna 3 - foto 13"
   },
+
 
 ]

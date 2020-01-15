@@ -17,6 +17,8 @@
     "formik": "^2.0.6",
     "fs": "0.0.1-security",
     "gsap": "^3.0.1",
+    "imagesloaded": "^4.1.4",
+    "infinite-scroll": "^3.0.6",
     "isomorphic-unfetch": "^3.0.0",
     "isotope-layout": "^3.0.6",
     "jquery": "^3.4.1",

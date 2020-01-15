@@ -1,8 +1,6 @@
 $dark: rgba(0, 0, 0, 0.8);
 
-img{
-  width:100%;
-}
+
 #no-freeze-spinner {
   position: fixed;
   top: 0;
@@ -14,6 +12,9 @@ img{
   transform: scale(10);
   z-index: -1;
   background: $dark;
+  img{
+    width:100%;
+  }
 }
 .no-freeze-spinner #no-freeze-spinner {
   z-index: 9999;

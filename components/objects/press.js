@@ -78,18 +78,18 @@ link: 'https://elpais.com/ccaa/2016/12/30/madrid/1483104859_299757.html',
   {
     classes:"element-press",
       mainImg:"/img/press/Press-Foto15.jpg",
-  link: 'https://tendencias.tv/diary/fiestas-festivales-eventos/the-hole-en-argentina/',
+      link: 'https://shangay.com/hemeroteca/shangay-506/',
   },
   {
     classes:"element-press",
       mainImg:"/img/press/Press-Foto16.jpg",
-link: 'https://shangay.com/hemeroteca/shangay-506/',
+      link: 'https://shangay.com/hemeroteca/shangay-489/',
   },
 
   {
     classes:"element-press full-width",
       mainImg:"/img/press/Press-Foto17.jpg",
-link: 'https://shangay.com/hemeroteca/shangay-489/',
+      link: 'https://tendencias.tv/diary/fiestas-festivales-eventos/the-hole-en-argentina/',
   },
 
 

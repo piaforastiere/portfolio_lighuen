@@ -61,10 +61,10 @@ const HorizontalSwiper = ({path, closeSlide, cursor}) => {
     const gallerySwiperParams = {
       getSwiper: getGallerySwiper,
       spaceBetween: 0,
-      // navigation: {
-      //   nextEl: '.swiper-button-next',
-      //   prevEl: '.swiper-button-prev',
-      // },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
       loopedSlides: true,
       on: {
         init: function () {
@@ -83,11 +83,11 @@ const HorizontalSwiper = ({path, closeSlide, cursor}) => {
       breakpoints: {
         // when window width is >= 320px
         320: {
-          slidesPerView: 2,
+          slidesPerView: 1.8,
         },
         // when window width is >= 480px
         480: {
-          slidesPerView: 3,
+          slidesPerView: 1.8,
         },
         // when window width is >= 640px
         640: {

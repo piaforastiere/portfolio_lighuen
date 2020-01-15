@@ -1,6 +1,6 @@
 import React,{ useState, useEffect} from 'react'
 import Link from 'next/link'
-import { FaFacebookF, FaInstagram, FaVimeoV, FaEnvelope }from 'react-icons/fa'
+import { FaFacebookF, FaInstagram, FaYoutube, FaEnvelope }from 'react-icons/fa'
 import $ from 'jquery'
 
 import Press from './Press'
@@ -28,8 +28,13 @@ const NavPress = () => {
       console.log($(this))
     })
   })
+
+  const handleClick = () => {
+    window.location.reload()
+  }
+
   return(
-    <nav className="sticky-top navbar navbar-expand-lg navbar-light">
+    <nav className="sticky-top navbar navbar-expand-lg navbar-light" id="navPress">
 
     {
       contactOpen &&
@@ -46,7 +51,7 @@ const NavPress = () => {
           <ul className="navbar-nav left-nav">
           <Link href="/">
             <li className="nav-item">
-              <a className="nav-link" >Home <span className="sr-only">(current)</span></a>
+              <a className="nav-link">Home <span className="sr-only">(current)</span></a>
             </li>
           </Link>
           <Link href="/press">
@@ -57,13 +62,13 @@ const NavPress = () => {
           </ul>
           <ul className="navbar-nav right-nav">
             <li className="nav-item">
-              <a className="nav-link" href="#"><FaFacebookF /></a>
+              <a className="nav-link" href="https://www.facebook.com/lighuendesantophoto/" target="_blank"><FaFacebookF /></a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#"><FaInstagram /></a>
+              <a className="nav-link" href="https://www.instagram.com/lighuendesanto/?hl=es" target="_blank"><FaInstagram /></a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#"><FaVimeoV /></a>
+              <a className="nav-link" href="https://www.youtube.com/user/LighuenDesanto" target="_blank"><FaYoutube /></a>
             </li>
             <li className="nav-item" onClick={() => setContactOpen(true)}>
               <a className="nav-link" href="#"><FaEnvelope /></a>

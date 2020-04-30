@@ -21,7 +21,7 @@
     "infinite-scroll": "^3.0.6",
     "isomorphic-unfetch": "^3.0.0",
     "isotope-layout": "^3.0.6",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "jquery-bridget": "^2.0.1",
     "list-react-files": "^0.2.0",
     "next": "9.1.3",
